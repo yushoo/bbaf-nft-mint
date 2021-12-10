@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <HeaderH1>BBAF MINT</HeaderH1>
+        <HeaderH1>BBAF CHRISTMAS SPECIAL</HeaderH1>
       </HeaderContent>
     </HeaderContainer>
   );
