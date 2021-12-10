@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import CandyMachine from "../CandyMachine";
 import {
   MintSectionContainer,
   MintSectionContent,
@@ -78,6 +79,8 @@ const MintSection = () => {
           {/** Render connect to wallet button */}
           {!walletAddress && renderNotConnectedContainer()}
         </MintHeader>
+        {/* Check for walletAddress and then pass in walletAddress */}
+        {walletAddress && <CandyMachine walletAddress={window.solana} />}
       </MintSectionContent>
     </MintSectionContainer>
   );
